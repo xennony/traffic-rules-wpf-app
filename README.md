@@ -1,4 +1,4 @@
-# Traffic rules wpf app
+# Traffic Rules Checker WPF App
 
 <img src="https://github.com/xennony/traffic-rules-wpf-app/blob/main/TrafficWpf.png" alt= “” width="700" height="value">
 
