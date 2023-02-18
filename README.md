@@ -8,3 +8,5 @@ The program allows the user to:
 + And pass the exam. 
 <br/>
 The program is aimed at increasing the level of knowledge and skills in the field of traffic and reducing the risk of getting penalties.
+
+You can download images from here:
