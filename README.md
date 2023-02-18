@@ -1,5 +1,7 @@
 # Traffic rules wpf app
 
+![Traffic rules image](https://postimg.cc/BjR8k9xr)
+
 The Traffic Rules Checker project is a program written in C# using the WPF platform to create a graphical interface. 
 The program allows the user to: 
 + Take tests on traffic rules tickets
