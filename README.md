@@ -1,6 +1,6 @@
 # Traffic rules wpf app
 
-![Image](https://github.com/xennony/traffic-rules-wpf-app/blob/main/TrafficWpf.png)
+<img src="https://github.com/xennony/traffic-rules-wpf-app/blob/main/TrafficWpf.png" alt= “” width="700" height="value">
 
 The Traffic Rules Checker project is a program written in C# using the WPF platform to create a graphical interface. 
 The program allows the user to: 
