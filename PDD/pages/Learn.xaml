@@ -1,0 +1,756 @@
+﻿<Page x:Class="PDD.pages.Learn"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:PDD.pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="850" d:DesignWidth="1300"
+      Title="Learn">
+
+    <Grid  Background="#FF212121">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="800"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <Label x:Name="labelVis" Content="Вы пока не допустили ни одной ошибки" Foreground="White" FontSize="24"
+               Grid.Column="1" HorizontalAlignment="Center"
+               VerticalAlignment="Center" Visibility="Hidden"/>
+        <StackPanel x:Name="MainStackPanel" Grid.Column="1" 
+                    Orientation="Vertical">
+            <StackPanel HorizontalAlignment="Center"
+                        Orientation="Horizontal">
+                <Button x:Name="OneButton" HorizontalAlignment="Left" Margin="20,20,0,0" VerticalAlignment="Top" Width="80" Height="80" Grid.ColumnSpan="2" Click="OneButton_Click">
+                    <StackPanel Orientation="Vertical">
+                        <!--<Image Source="/img/1.png" Width="50" Height="50"/>-->
+                        <TextBlock Text="1" FontSize="48" HorizontalAlignment="Center"/>
+                    </StackPanel>
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="10"/>
+                        </Style>
+                    </Button.Resources>
+                    <Button.Background>
+                        <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                            <GradientStop Color="#FFA1C4FD" Offset="0"/>
+                            <GradientStop Color="#FF3CCFF0" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Button.Background>
+                </Button>
+                <Button x:Name="TwoButton" HorizontalAlignment="Left" Margin="20,20,0,0" VerticalAlignment="Top" Width="80" Height="80" Grid.ColumnSpan="2" Click="TwoButton_Click">
+                    <StackPanel Orientation="Vertical">
+                        <!--<Image Source="/img/1.png" Width="50" Height="50"/>-->
+                        <TextBlock Text="2" FontSize="48" HorizontalAlignment="Center"/>
+                    </StackPanel>
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="10"/>
+                        </Style>
+                    </Button.Resources>
+                    <Button.Background>
+                        <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                            <GradientStop Color="#FFA1C4FD" Offset="0"/>
+                            <GradientStop Color="#FF3CCFF0" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Button.Background>
+                </Button>
+                <Button x:Name="ThreeButton" HorizontalAlignment="Left" Margin="20,20,0,0" VerticalAlignment="Top" Width="80" Height="80" Grid.ColumnSpan="2" Click="ThreeButton_Click">
+                    <StackPanel Orientation="Vertical">
+                        <!--<Image Source="/img/1.png" Width="50" Height="50"/>-->
+                        <TextBlock Text="3" FontSize="48" HorizontalAlignment="Center"/>
+                    </StackPanel>
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="10"/>
+                        </Style>
+                    </Button.Resources>
+                    <Button.Background>
+                        <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                            <GradientStop Color="#FFA1C4FD" Offset="0"/>
+                            <GradientStop Color="#FF3CCFF0" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Button.Background>
+                </Button>
+                <Button x:Name="FourButton" HorizontalAlignment="Left" Margin="20,20,0,0" VerticalAlignment="Top" Width="80" Height="80" Grid.ColumnSpan="2" Click="FourButton_Click">
+                    <StackPanel Orientation="Vertical">
+                        <!--<Image Source="/img/1.png" Width="50" Height="50"/>-->
+                        <TextBlock Text="4" FontSize="48" HorizontalAlignment="Center"/>
+                    </StackPanel>
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="10"/>
+                        </Style>
+                    </Button.Resources>
+                    <Button.Background>
+                        <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                            <GradientStop Color="#FFA1C4FD" Offset="0"/>
+                            <GradientStop Color="#FF3CCFF0" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Button.Background>
+                </Button>
+                <Button x:Name="FiveButton" HorizontalAlignment="Left" Margin="20,20,0,0" VerticalAlignment="Top" Width="80" Height="80" Grid.ColumnSpan="2" Click="FiveButton_Click">
+                    <StackPanel Orientation="Vertical">
+                        <!--<Image Source="/img/1.png" Width="50" Height="50"/>-->
+                        <TextBlock Text="5" FontSize="48" HorizontalAlignment="Center"/>
+                    </StackPanel>
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="10"/>
+                        </Style>
+                    </Button.Resources>
+                    <Button.Background>
+                        <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                            <GradientStop Color="#FFA1C4FD" Offset="0"/>
+                            <GradientStop Color="#FF3CCFF0" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Button.Background>
+                </Button>
+
+            </StackPanel>
+            <StackPanel HorizontalAlignment="Center"
+                        Orientation="Horizontal">
+                <Button x:Name="SixButton" HorizontalAlignment="Left" Margin="20,20,0,0" VerticalAlignment="Top" Width="80" Height="80" Grid.ColumnSpan="2" Click="SixButton_Click">
+                    <StackPanel Orientation="Vertical">
+                        <!--<Image Source="/img/1.png" Width="50" Height="50"/>-->
+                        <TextBlock Text="6" FontSize="48" HorizontalAlignment="Center"/>
+                    </StackPanel>
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="10"/>
+                        </Style>
+                    </Button.Resources>
+                    <Button.Background>
+                        <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                            <GradientStop Color="#FFA1C4FD" Offset="0"/>
+                            <GradientStop Color="#FF3CCFF0" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Button.Background>
+                </Button>
+                <Button x:Name="SevenButton" HorizontalAlignment="Left" Margin="20,20,0,0" VerticalAlignment="Top" Width="80" Height="80" Grid.ColumnSpan="2" Click="SevenButton_Click">
+                    <StackPanel Orientation="Vertical">
+                        <!--<Image Source="/img/1.png" Width="50" Height="50"/>-->
+                        <TextBlock Text="7" FontSize="48" HorizontalAlignment="Center"/>
+                    </StackPanel>
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="10"/>
+                        </Style>
+                    </Button.Resources>
+                    <Button.Background>
+                        <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                            <GradientStop Color="#FFA1C4FD" Offset="0"/>
+                            <GradientStop Color="#FF3CCFF0" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Button.Background>
+                </Button>
+                <Button x:Name="EightButton" HorizontalAlignment="Left" Margin="20,20,0,0" VerticalAlignment="Top" Width="80" Height="80" Grid.ColumnSpan="2" Click="EightButton_Click">
+                    <StackPanel Orientation="Vertical">
+                        <!--<Image Source="/img/1.png" Width="50" Height="50"/>-->
+                        <TextBlock Text="8" FontSize="48" HorizontalAlignment="Center"/>
+                    </StackPanel>
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="10"/>
+                        </Style>
+                    </Button.Resources>
+                    <Button.Background>
+                        <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                            <GradientStop Color="#FFA1C4FD" Offset="0"/>
+                            <GradientStop Color="#FF3CCFF0" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Button.Background>
+                </Button>
+                <Button x:Name="NineButton" HorizontalAlignment="Left" Margin="20,20,0,0" VerticalAlignment="Top" Width="80" Height="80" Grid.ColumnSpan="2" Click="NineButton_Click">
+                    <StackPanel Orientation="Vertical">
+                        <!--<Image Source="/img/1.png" Width="50" Height="50"/>-->
+                        <TextBlock Text="9" FontSize="48" HorizontalAlignment="Center"/>
+                    </StackPanel>
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="10"/>
+                        </Style>
+                    </Button.Resources>
+                    <Button.Background>
+                        <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                            <GradientStop Color="#FFA1C4FD" Offset="0"/>
+                            <GradientStop Color="#FF3CCFF0" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Button.Background>
+                </Button>
+                <Button x:Name="TenButton" HorizontalAlignment="Left" Margin="20,20,0,0" VerticalAlignment="Top" Width="80" Height="80" Grid.ColumnSpan="2" Click="TenButton_Click">
+                    <StackPanel Orientation="Vertical">
+                        <!--<Image Source="/img/1.png" Width="50" Height="50"/>-->
+                        <TextBlock Text="10" FontSize="48" HorizontalAlignment="Center"/>
+                    </StackPanel>
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="10"/>
+                        </Style>
+                    </Button.Resources>
+                    <Button.Background>
+                        <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                            <GradientStop Color="#FFA1C4FD" Offset="0"/>
+                            <GradientStop Color="#FF3CCFF0" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Button.Background>
+                </Button>
+
+            </StackPanel>
+            <StackPanel HorizontalAlignment="Center"
+                        Orientation="Horizontal">
+                <Button x:Name="ElevenButton" HorizontalAlignment="Left" Margin="20,20,0,0" VerticalAlignment="Top" Width="80" Height="80" Grid.ColumnSpan="2" Click="ElevenButton_Click">
+                    <StackPanel Orientation="Vertical">
+                        <!--<Image Source="/img/1.png" Width="50" Height="50"/>-->
+                        <TextBlock Text="11" FontSize="48" HorizontalAlignment="Center"/>
+                    </StackPanel>
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="10"/>
+                        </Style>
+                    </Button.Resources>
+                    <Button.Background>
+                        <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                            <GradientStop Color="#FFA1C4FD" Offset="0"/>
+                            <GradientStop Color="#FF3CCFF0" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Button.Background>
+                </Button>
+                <Button x:Name="TwelveButton" HorizontalAlignment="Left" Margin="20,20,0,0" VerticalAlignment="Top" Width="80" Height="80" Grid.ColumnSpan="2" Click="TwelveButton_Click">
+                    <StackPanel Orientation="Vertical">
+                        <!--<Image Source="/img/1.png" Width="50" Height="50"/>-->
+                        <TextBlock Text="12" FontSize="48" HorizontalAlignment="Center"/>
+                    </StackPanel>
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="10"/>
+                        </Style>
+                    </Button.Resources>
+                    <Button.Background>
+                        <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                            <GradientStop Color="#FFA1C4FD" Offset="0"/>
+                            <GradientStop Color="#FF3CCFF0" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Button.Background>
+                </Button>
+                <Button x:Name="ThirteenButton" HorizontalAlignment="Left" Margin="20,20,0,0" VerticalAlignment="Top" Width="80" Height="80" Grid.ColumnSpan="2" Click="ThirteenButton_Click">
+                    <StackPanel Orientation="Vertical">
+                        <!--<Image Source="/img/1.png" Width="50" Height="50"/>-->
+                        <TextBlock Text="13" FontSize="48" HorizontalAlignment="Center"/>
+                    </StackPanel>
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="10"/>
+                        </Style>
+                    </Button.Resources>
+                    <Button.Background>
+                        <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                            <GradientStop Color="#FFA1C4FD" Offset="0"/>
+                            <GradientStop Color="#FF3CCFF0" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Button.Background>
+                </Button>
+                <Button x:Name="FourteenButton" HorizontalAlignment="Left" Margin="20,20,0,0" VerticalAlignment="Top" Width="80" Height="80" Grid.ColumnSpan="2" Click="FourteenButton_Click">
+                    <StackPanel Orientation="Vertical">
+                        <!--<Image Source="/img/1.png" Width="50" Height="50"/>-->
+                        <TextBlock Text="14" FontSize="48" HorizontalAlignment="Center"/>
+                    </StackPanel>
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="10"/>
+                        </Style>
+                    </Button.Resources>
+                    <Button.Background>
+                        <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                            <GradientStop Color="#FFA1C4FD" Offset="0"/>
+                            <GradientStop Color="#FF3CCFF0" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Button.Background>
+                </Button>
+                <Button x:Name="FifteenButton" HorizontalAlignment="Left" Margin="20,20,0,0" VerticalAlignment="Top" Width="80" Height="80" Grid.ColumnSpan="2" Click="FifteenButton_Click">
+                    <StackPanel Orientation="Vertical">
+                        <!--<Image Source="/img/1.png" Width="50" Height="50"/>-->
+                        <TextBlock Text="15" FontSize="48" HorizontalAlignment="Center"/>
+                    </StackPanel>
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="10"/>
+                        </Style>
+                    </Button.Resources>
+                    <Button.Background>
+                        <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                            <GradientStop Color="#FFA1C4FD" Offset="0"/>
+                            <GradientStop Color="#FF3CCFF0" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Button.Background>
+                </Button>
+
+            </StackPanel>
+
+            <StackPanel HorizontalAlignment="Center"
+                        Orientation="Horizontal">
+                <Button x:Name="SixteenButton" HorizontalAlignment="Left" Margin="20,20,0,0" VerticalAlignment="Top" Width="80" Height="80" Grid.ColumnSpan="2" Click="SixteenButton_Click">
+                    <StackPanel Orientation="Vertical">
+                        <!--<Image Source="/img/1.png" Width="50" Height="50"/>-->
+                        <TextBlock Text="16" FontSize="48" HorizontalAlignment="Center"/>
+                    </StackPanel>
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="10"/>
+                        </Style>
+                    </Button.Resources>
+                    <Button.Background>
+                        <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                            <GradientStop Color="#FFA1C4FD" Offset="0"/>
+                            <GradientStop Color="#FF3CCFF0" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Button.Background>
+                </Button>
+                <Button x:Name="SeventeenButton" HorizontalAlignment="Left" Margin="20,20,0,0" VerticalAlignment="Top" Width="80" Height="80" Grid.ColumnSpan="2" Click="SeventeenButton_Click">
+                    <StackPanel Orientation="Vertical">
+                        <!--<Image Source="/img/1.png" Width="50" Height="50"/>-->
+                        <TextBlock Text="17" FontSize="48" HorizontalAlignment="Center"/>
+                    </StackPanel>
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="10"/>
+                        </Style>
+                    </Button.Resources>
+                    <Button.Background>
+                        <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                            <GradientStop Color="#FFA1C4FD" Offset="0"/>
+                            <GradientStop Color="#FF3CCFF0" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Button.Background>
+                </Button>
+                <Button x:Name="EighteenButton" HorizontalAlignment="Left" Margin="20,20,0,0" VerticalAlignment="Top" Width="80" Height="80" Grid.ColumnSpan="2" Click="EighteenButton_Click">
+                    <StackPanel Orientation="Vertical">
+                        <!--<Image Source="/img/1.png" Width="50" Height="50"/>-->
+                        <TextBlock Text="18" FontSize="48" HorizontalAlignment="Center"/>
+                    </StackPanel>
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="10"/>
+                        </Style>
+                    </Button.Resources>
+                    <Button.Background>
+                        <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                            <GradientStop Color="#FFA1C4FD" Offset="0"/>
+                            <GradientStop Color="#FF3CCFF0" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Button.Background>
+                </Button>
+                <Button x:Name="NineteenButton" HorizontalAlignment="Left" Margin="20,20,0,0" VerticalAlignment="Top" Width="80" Height="80" Grid.ColumnSpan="2" Click="NineteenButton_Click">
+                    <StackPanel Orientation="Vertical">
+                        <!--<Image Source="/img/1.png" Width="50" Height="50"/>-->
+                        <TextBlock Text="19" FontSize="48" HorizontalAlignment="Center"/>
+                    </StackPanel>
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="10"/>
+                        </Style>
+                    </Button.Resources>
+                    <Button.Background>
+                        <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                            <GradientStop Color="#FFA1C4FD" Offset="0"/>
+                            <GradientStop Color="#FF3CCFF0" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Button.Background>
+                </Button>
+                <Button x:Name="TwentyButton" HorizontalAlignment="Left" Margin="20,20,0,0" VerticalAlignment="Top" Width="80" Height="80" Grid.ColumnSpan="2" Click="TwentyButton_Click">
+                    <StackPanel Orientation="Vertical">
+                        <!--<Image Source="/img/1.png" Width="50" Height="50"/>-->
+                        <TextBlock Text="20" FontSize="48" HorizontalAlignment="Center"/>
+                    </StackPanel>
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="10"/>
+                        </Style>
+                    </Button.Resources>
+                    <Button.Background>
+                        <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                            <GradientStop Color="#FFA1C4FD" Offset="0"/>
+                            <GradientStop Color="#FF3CCFF0" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Button.Background>
+                </Button>
+
+            </StackPanel>
+
+            <StackPanel HorizontalAlignment="Center"
+                        Orientation="Horizontal">
+                <Button x:Name="TwentyOneButton" HorizontalAlignment="Left" Margin="20,20,0,0" VerticalAlignment="Top" Width="80" Height="80" Grid.ColumnSpan="2" Click="TwentyOneButton_Click">
+                    <StackPanel Orientation="Vertical">
+                        <!--<Image Source="/img/1.png" Width="50" Height="50"/>-->
+                        <TextBlock Text="21" FontSize="48" HorizontalAlignment="Center"/>
+                    </StackPanel>
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="10"/>
+                        </Style>
+                    </Button.Resources>
+                    <Button.Background>
+                        <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                            <GradientStop Color="#FFA1C4FD" Offset="0"/>
+                            <GradientStop Color="#FF3CCFF0" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Button.Background>
+                </Button>
+                <Button x:Name="TwentyTwoButton" HorizontalAlignment="Left" Margin="20,20,0,0" VerticalAlignment="Top" Width="80" Height="80" Grid.ColumnSpan="2" Click="TwentyTwoButton_Click">
+                    <StackPanel Orientation="Vertical">
+                        <!--<Image Source="/img/1.png" Width="50" Height="50"/>-->
+                        <TextBlock Text="22" FontSize="48" HorizontalAlignment="Center"/>
+                    </StackPanel>
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="10"/>
+                        </Style>
+                    </Button.Resources>
+                    <Button.Background>
+                        <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                            <GradientStop Color="#FFA1C4FD" Offset="0"/>
+                            <GradientStop Color="#FF3CCFF0" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Button.Background>
+                </Button>
+                <Button x:Name="TwentyThreeButton" HorizontalAlignment="Left" Margin="20,20,0,0" VerticalAlignment="Top" Width="80" Height="80" Grid.ColumnSpan="2" Click="TwentyThreeButton_Click">
+                    <StackPanel Orientation="Vertical">
+                        <!--<Image Source="/img/1.png" Width="50" Height="50"/>-->
+                        <TextBlock Text="23" FontSize="48" HorizontalAlignment="Center"/>
+                    </StackPanel>
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="10"/>
+                        </Style>
+                    </Button.Resources>
+                    <Button.Background>
+                        <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                            <GradientStop Color="#FFA1C4FD" Offset="0"/>
+                            <GradientStop Color="#FF3CCFF0" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Button.Background>
+                </Button>
+                <Button x:Name="TwentyFourButton" HorizontalAlignment="Left" Margin="20,20,0,0" VerticalAlignment="Top" Width="80" Height="80" Grid.ColumnSpan="2" Click="TwentyFourButton_Click">
+                    <StackPanel Orientation="Vertical">
+                        <!--<Image Source="/img/1.png" Width="50" Height="50"/>-->
+                        <TextBlock Text="24" FontSize="48" HorizontalAlignment="Center"/>
+                    </StackPanel>
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="10"/>
+                        </Style>
+                    </Button.Resources>
+                    <Button.Background>
+                        <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                            <GradientStop Color="#FFA1C4FD" Offset="0"/>
+                            <GradientStop Color="#FF3CCFF0" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Button.Background>
+                </Button>
+                <Button x:Name="TwentyFiveButton" HorizontalAlignment="Left" Margin="20,20,0,0" VerticalAlignment="Top" Width="80" Height="80" Grid.ColumnSpan="2" Click="TwentyFiveButton_Click">
+                    <StackPanel Orientation="Vertical">
+                        <!--<Image Source="/img/1.png" Width="50" Height="50"/>-->
+                        <TextBlock Text="25" FontSize="48" HorizontalAlignment="Center"/>
+                    </StackPanel>
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="10"/>
+                        </Style>
+                    </Button.Resources>
+                    <Button.Background>
+                        <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                            <GradientStop Color="#FFA1C4FD" Offset="0"/>
+                            <GradientStop Color="#FF3CCFF0" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Button.Background>
+                </Button>
+
+            </StackPanel>
+
+            <StackPanel HorizontalAlignment="Center"
+                        Orientation="Horizontal">
+                <Button x:Name="TwentySixButton" HorizontalAlignment="Left" Margin="20,20,0,0" VerticalAlignment="Top" Width="80" Height="80" Grid.ColumnSpan="2" Click="TwentySixButton_Click">
+                    <StackPanel Orientation="Vertical">
+                        <!--<Image Source="/img/1.png" Width="50" Height="50"/>-->
+                        <TextBlock Text="26" FontSize="48" HorizontalAlignment="Center"/>
+                    </StackPanel>
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="10"/>
+                        </Style>
+                    </Button.Resources>
+                    <Button.Background>
+                        <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                            <GradientStop Color="#FFA1C4FD" Offset="0"/>
+                            <GradientStop Color="#FF3CCFF0" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Button.Background>
+                </Button>
+                <Button x:Name="TwentySevenButton" HorizontalAlignment="Left" Margin="20,20,0,0" VerticalAlignment="Top" Width="80" Height="80" Grid.ColumnSpan="2" Click="TwentySevenButton_Click">
+                    <StackPanel Orientation="Vertical">
+                        <!--<Image Source="/img/1.png" Width="50" Height="50"/>-->
+                        <TextBlock Text="27" FontSize="48" HorizontalAlignment="Center"/>
+                    </StackPanel>
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="10"/>
+                        </Style>
+                    </Button.Resources>
+                    <Button.Background>
+                        <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                            <GradientStop Color="#FFA1C4FD" Offset="0"/>
+                            <GradientStop Color="#FF3CCFF0" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Button.Background>
+                </Button>
+                <Button x:Name="TwentyEightButton" HorizontalAlignment="Left" Margin="20,20,0,0" VerticalAlignment="Top" Width="80" Height="80" Grid.ColumnSpan="2" Click="TwentyEightButton_Click">
+                    <StackPanel Orientation="Vertical">
+                        <!--<Image Source="/img/1.png" Width="50" Height="50"/>-->
+                        <TextBlock Text="28" FontSize="48" HorizontalAlignment="Center"/>
+                    </StackPanel>
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="10"/>
+                        </Style>
+                    </Button.Resources>
+                    <Button.Background>
+                        <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                            <GradientStop Color="#FFA1C4FD" Offset="0"/>
+                            <GradientStop Color="#FF3CCFF0" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Button.Background>
+                </Button>
+                <Button x:Name="TwentyNineButton" HorizontalAlignment="Left" Margin="20,20,0,0" VerticalAlignment="Top" Width="80" Height="80" Grid.ColumnSpan="2" Click="TwentyNineButton_Click">
+                    <StackPanel Orientation="Vertical">
+                        <!--<Image Source="/img/1.png" Width="50" Height="50"/>-->
+                        <TextBlock Text="29" FontSize="48" HorizontalAlignment="Center"/>
+                    </StackPanel>
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="10"/>
+                        </Style>
+                    </Button.Resources>
+                    <Button.Background>
+                        <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                            <GradientStop Color="#FFA1C4FD" Offset="0"/>
+                            <GradientStop Color="#FF3CCFF0" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Button.Background>
+                </Button>
+                <Button x:Name="ThirtyButton" HorizontalAlignment="Left" Margin="20,20,0,0" VerticalAlignment="Top" Width="80" Height="80" Grid.ColumnSpan="2" Click="ThirtyButton_Click">
+                    <StackPanel Orientation="Vertical">
+                        <!--<Image Source="/img/1.png" Width="50" Height="50"/>-->
+                        <TextBlock Text="30" FontSize="48" HorizontalAlignment="Center"/>
+                    </StackPanel>
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="10"/>
+                        </Style>
+                    </Button.Resources>
+                    <Button.Background>
+                        <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                            <GradientStop Color="#FFA1C4FD" Offset="0"/>
+                            <GradientStop Color="#FF3CCFF0" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Button.Background>
+                </Button>
+
+            </StackPanel>
+
+            <StackPanel HorizontalAlignment="Center"
+                        Orientation="Horizontal">
+                <Button x:Name="ThirtyOneButton" HorizontalAlignment="Left" Margin="20,20,0,0" VerticalAlignment="Top" Width="80" Height="80" Grid.ColumnSpan="2" Click="ThirtyOneButton_Click">
+                    <StackPanel Orientation="Vertical">
+                        <!--<Image Source="/img/1.png" Width="50" Height="50"/>-->
+                        <TextBlock Text="31" FontSize="48" HorizontalAlignment="Center"/>
+                    </StackPanel>
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="10"/>
+                        </Style>
+                    </Button.Resources>
+                    <Button.Background>
+                        <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                            <GradientStop Color="#FFA1C4FD" Offset="0"/>
+                            <GradientStop Color="#FF3CCFF0" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Button.Background>
+                </Button>
+                <Button x:Name="ThirtyTwoButton" HorizontalAlignment="Left" Margin="20,20,0,0" VerticalAlignment="Top" Width="80" Height="80" Grid.ColumnSpan="2" Click="ThirtyTwoButton_Click">
+                    <StackPanel Orientation="Vertical">
+                        <!--<Image Source="/img/1.png" Width="50" Height="50"/>-->
+                        <TextBlock Text="32" FontSize="48" HorizontalAlignment="Center"/>
+                    </StackPanel>
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="10"/>
+                        </Style>
+                    </Button.Resources>
+                    <Button.Background>
+                        <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                            <GradientStop Color="#FFA1C4FD" Offset="0"/>
+                            <GradientStop Color="#FF3CCFF0" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Button.Background>
+                </Button>
+                <Button x:Name="ThirtyThreeButton" HorizontalAlignment="Left" Margin="20,20,0,0" VerticalAlignment="Top" Width="80" Height="80" Grid.ColumnSpan="2" Click="ThirtyThreeButton_Click">
+                    <StackPanel Orientation="Vertical">
+                        <!--<Image Source="/img/1.png" Width="50" Height="50"/>-->
+                        <TextBlock Text="33" FontSize="48" HorizontalAlignment="Center"/>
+                    </StackPanel>
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="10"/>
+                        </Style>
+                    </Button.Resources>
+                    <Button.Background>
+                        <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                            <GradientStop Color="#FFA1C4FD" Offset="0"/>
+                            <GradientStop Color="#FF3CCFF0" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Button.Background>
+                </Button>
+                <Button x:Name="ThirtyFourButton" HorizontalAlignment="Left" Margin="20,20,0,0" VerticalAlignment="Top" Width="80" Height="80" Grid.ColumnSpan="2" Click="ThirtyFourButton_Click">
+                    <StackPanel Orientation="Vertical">
+                        <!--<Image Source="/img/1.png" Width="50" Height="50"/>-->
+                        <TextBlock Text="34" FontSize="48" HorizontalAlignment="Center"/>
+                    </StackPanel>
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="10"/>
+                        </Style>
+                    </Button.Resources>
+                    <Button.Background>
+                        <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                            <GradientStop Color="#FFA1C4FD" Offset="0"/>
+                            <GradientStop Color="#FF3CCFF0" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Button.Background>
+                </Button>
+                <Button x:Name="ThirtyFiveButton" HorizontalAlignment="Left" Margin="20,20,0,0" VerticalAlignment="Top" Width="80" Height="80" Grid.ColumnSpan="2" Click="ThirtyFiveButton_Click">
+                    <StackPanel Orientation="Vertical">
+                        <!--<Image Source="/img/1.png" Width="50" Height="50"/>-->
+                        <TextBlock Text="35" FontSize="48" HorizontalAlignment="Center"/>
+                    </StackPanel>
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="10"/>
+                        </Style>
+                    </Button.Resources>
+                    <Button.Background>
+                        <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                            <GradientStop Color="#FFA1C4FD" Offset="0"/>
+                            <GradientStop Color="#FF3CCFF0" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Button.Background>
+                </Button>
+
+            </StackPanel>
+
+            <StackPanel HorizontalAlignment="Center"
+                        Orientation="Horizontal">
+                <Button x:Name="ThirtySixButton" HorizontalAlignment="Left" Margin="20,20,0,0" VerticalAlignment="Top" Width="80" Height="80" Grid.ColumnSpan="2" Click="ThirtySixButton_Click">
+                    <StackPanel Orientation="Vertical">
+                        <!--<Image Source="/img/1.png" Width="50" Height="50"/>-->
+                        <TextBlock Text="36" FontSize="48" HorizontalAlignment="Center"/>
+                    </StackPanel>
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="10"/>
+                        </Style>
+                    </Button.Resources>
+                    <Button.Background>
+                        <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                            <GradientStop Color="#FFA1C4FD" Offset="0"/>
+                            <GradientStop Color="#FF3CCFF0" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Button.Background>
+                </Button>
+                <Button x:Name="ThirtySevenButton" HorizontalAlignment="Left" Margin="20,20,0,0" VerticalAlignment="Top" Width="80" Height="80" Grid.ColumnSpan="2" Click="ThirtySevenButton_Click">
+                    <StackPanel Orientation="Vertical">
+                        <!--<Image Source="/img/1.png" Width="50" Height="50"/>-->
+                        <TextBlock Text="37" FontSize="48" HorizontalAlignment="Center"/>
+                    </StackPanel>
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="10"/>
+                        </Style>
+                    </Button.Resources>
+                    <Button.Background>
+                        <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                            <GradientStop Color="#FFA1C4FD" Offset="0"/>
+                            <GradientStop Color="#FF3CCFF0" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Button.Background>
+                </Button>
+                <Button x:Name="ThirtyEightButton" HorizontalAlignment="Left" Margin="20,20,0,0" VerticalAlignment="Top" Width="80" Height="80" Grid.ColumnSpan="2" Click="ThirtyEightButton_Click">
+                    <StackPanel Orientation="Vertical">
+                        <!--<Image Source="/img/1.png" Width="50" Height="50"/>-->
+                        <TextBlock Text="38" FontSize="48" HorizontalAlignment="Center"/>
+                    </StackPanel>
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="10"/>
+                        </Style>
+                    </Button.Resources>
+                    <Button.Background>
+                        <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                            <GradientStop Color="#FFA1C4FD" Offset="0"/>
+                            <GradientStop Color="#FF3CCFF0" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Button.Background>
+                </Button>
+                <Button x:Name="ThirtyNineButton" HorizontalAlignment="Left" Margin="20,20,0,0" VerticalAlignment="Top" Width="80" Height="80" Grid.ColumnSpan="2" Click="ThirtyNineButton_Click">
+                    <StackPanel Orientation="Vertical">
+                        <!--<Image Source="/img/1.png" Width="50" Height="50"/>-->
+                        <TextBlock Text="39" FontSize="48" HorizontalAlignment="Center"/>
+                    </StackPanel>
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="10"/>
+                        </Style>
+                    </Button.Resources>
+                    <Button.Background>
+                        <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                            <GradientStop Color="#FFA1C4FD" Offset="0"/>
+                            <GradientStop Color="#FF3CCFF0" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Button.Background>
+                </Button>
+                <Button x:Name="FortyButton" HorizontalAlignment="Left" Margin="20,20,0,0" VerticalAlignment="Top" Width="80" Height="80" Grid.ColumnSpan="2" Click="FortyButton_Click">
+                    <StackPanel Orientation="Vertical">
+                        <!--<Image Source="/img/1.png" Width="50" Height="50"/>-->
+                        <TextBlock Text="40" FontSize="48" HorizontalAlignment="Center"/>
+                    </StackPanel>
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="10"/>
+                        </Style>
+                    </Button.Resources>
+                    <Button.Background>
+                        <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                            <GradientStop Color="#FFA1C4FD" Offset="0"/>
+                            <GradientStop Color="#FF3CCFF0" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Button.Background>
+                </Button>
+
+            </StackPanel>
+
+            
+
+
+
+        </StackPanel>
+        <Button Grid.Column="2" 
+                    x:Name="backButton1" 
+                    Width="100" Height="40" 
+                    Content="Назад" 
+                    Click="backButton1_Click"
+                    VerticalAlignment="Top"
+                Margin="0,50,0,0"
+                  />
+        <Frame Grid.ColumnSpan="3" x:Name="frameLearn"></Frame>
+    </Grid>
+</Page>

@@ -1,0 +1,49 @@
+﻿<Page x:Class="PDD.pages.sections.Section21"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:PDD.pages.sections"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Section21">
+
+    <Grid>
+        <Rectangle Fill="White"/>
+
+        <ScrollViewer>
+            <StackPanel x:Name="SctackPanelSec21">
+
+                <TextBlock TextWrapping="Wrap" Margin="0,0,0,10">21.1.
+    Обучение первоначальным навыкам управления транспортным средством должно проводиться на закрытых площадках или автодромах.</TextBlock>
+                <Separator/>
+                <TextBlock TextWrapping="Wrap" Margin="0,0,0,10">21.2.
+    Учебная езда на дорогах допускается только с обучающим вождению.</TextBlock>
+                <Separator/>
+                <TextBlock TextWrapping="Wrap" Margin="0,0,0,10">21.3.
+    При обучении управлению транспортным средством на дорогах обучающий вождению должен находиться на сиденье, с которого осуществляется доступ к дублирующим органам управления этим транспортным средством, иметь при себе документ на право обучения управлению транспортным средством данной категории или подкатегории, а также водительское удостоверение на право управления транспортным средством соответствующей категории или подкатегории.</TextBlock>
+                <Separator/>
+                <TextBlock TextWrapping="Wrap" Margin="0,0,0,10">21.4.
+    К учебной езде на дорогах допускаются обучающиеся вождению, достигшие возраста:
+    
+
+
+    16 лет - при обучении управлению транспортным средством категорий "B", "C" или подкатегории "C1";
+    
+
+
+
+    20 лет - при обучении управлению транспортным средством категорий "D", "Tb", "Tm" или подкатегории "D1" (18 лет - для лиц, указанных в пункте 4 статьи 26 Федерального закона "О безопасности дорожного движения", - при обучении управлению транспортным средством категории "D" или подкатегории "D1").</TextBlock>
+                <Separator/>
+                <TextBlock TextWrapping="Wrap" Margin="0,0,0,10">21.5.
+    Механическое транспортное средство, на котором проводится обучение, должно быть оборудовано в соответствии с пунктом 5 Основных положений и иметь опознавательные знаки "Учебное транспортное средство".</TextBlock>
+                <Separator/>
+                <TextBlock TextWrapping="Wrap" Margin="0,0,0,10">21.6.
+    Запрещается учебная езда на дорогах, перечень которых объявляется в установленном порядке.</TextBlock>
+                <Separator/>
+
+
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</Page>

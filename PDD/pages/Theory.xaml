@@ -1,0 +1,103 @@
+﻿<Page x:Class="PDD.pages.Theory"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:PDD.pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Theory">
+
+    <Grid Background="#FF212121">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="800"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.Column="1"
+                    VerticalAlignment="Top">
+            <TextBox x:Name="SearchBox" 
+                     SelectionChanged="SearchBox_SelectionChanged" 
+                     TextChanged="SearchBox_TextChanged"
+                     Height="25"/>
+            <!--<TextBox x:Name="SearchBox" SelectionChanged="SearchBox_SelectionChanged" TextChanged="SearchBox_TextChanged">
+                <TextBox.Style>
+                    <Style TargetType="TextBox" xmlns:sys="clr-namespace:System;assembly=mscorlib">
+                        <Style.Resources>
+                            <VisualBrush x:Key="CueBannerBrush" AlignmentX="Left" AlignmentY="Center" Stretch="None">
+                                <VisualBrush.Visual>
+                                    <Label Content="Поиск" Foreground="LightGray" />
+                                </VisualBrush.Visual>
+                            </VisualBrush>
+                        </Style.Resources>
+                        <Style.Triggers>
+                            <Trigger Property="Text" Value="{x:Static sys:String.Empty}">
+                                <Setter Property="Background" Value="{StaticResource CueBannerBrush}" />
+                            </Trigger>
+                            <Trigger Property="Text" Value="{x:Null}">
+                                <Setter Property="Background" Value="{StaticResource CueBannerBrush}" />
+                            </Trigger>
+                            <Trigger Property="IsKeyboardFocused" Value="True">
+                                <Setter Property="Background" Value="White" />
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </TextBox.Style>
+            </TextBox>-->
+            
+            <Label Foreground="White">Разделы</Label>
+            <ComboBox x:Name="ComboBox1" Height="30 " SelectionChanged="ComboBox1_SelectionChanged">
+                <ComboBoxItem x:Name="GeneralProvisionsItem" Content="1. Общие положения" Selected="GeneralProvisionsItem_Selected"/>
+                <ComboBoxItem x:Name="Section2Pg" Content="2. Общие обязанности" Selected="Section2Page"/>
+                <ComboBoxItem x:Name="Section3Pg" Content="3. Применение специальных сигналов" Selected="Section3Page"/>
+                <ComboBoxItem x:Name="Section4Pg" Content="4. Обязанности пешеходов" Selected="Section4Page"/>
+                <ComboBoxItem x:Name="Section5Pg" Content="5. Обязанности пассажиров" Selected="Section5Page"/>
+                <ComboBoxItem x:Name="Section6pg" Content="6. Сигналы светофора и регулировщика" Selected="Section6Page"/>
+                <ComboBoxItem x:Name="Section7Pg" Content="7. Применение аварийной сигнализации знака аварийонй остановки" Selected="Section7Page"/>
+                <ComboBoxItem x:Name="Section8Pg" Content="8. Начало движения, маневрирование" Selected="Section8Page"/>
+                <ComboBoxItem x:Name="Section9Pg" Content="9. Расположение транспортных средств на проезжей части" Selected="Section9Page"/>
+                <ComboBoxItem x:Name="Section10Pg" Content="10. Скорость движения" Selected="Section10Page"/>
+                <ComboBoxItem x:Name="Section11Pg" Content="11. Обгон, опережение, встречный разъезд" Selected="Section11Page"/>
+                <ComboBoxItem x:Name="Section12Pg" Content="12. Остановка и стоянка" Selected="Section12Page"/>
+                <ComboBoxItem x:Name="Section13Pg" Content="13. Проезд перекрестков" Selected="Section13Page"/>
+                <ComboBoxItem x:Name="Section14Pg" Content="14. Пешеходные переходы и места остановок маршрутных транспортных средств" Selected="Section14Page"/>
+                <ComboBoxItem x:Name="Section15Pg" Content="15. Движение через железнодорожные пути" Selected="Section15Page"/>
+                <ComboBoxItem x:Name="Section16Pg" Content="16. Дижение по автомагистралям" Selected="Section16Page"/>
+                <ComboBoxItem x:Name="Section17Pg" Content="17. Движение в жилых зонах" Selected="Section17Page"/>
+                <ComboBoxItem x:Name="Section18Pg" Content="18. Приоритет маршрутных транспортных транспортных средств" Selected="Section18Page"/>
+                <ComboBoxItem x:Name="Section19Pg" Content="19. Пользование внешними световыми приборами и звуковыми сигналами" Selected="Section19Page"/>
+                <ComboBoxItem x:Name="Section20Pg" Content="20. Буксировка механических транспортных средств" Selected="Section20Page"/>
+                <ComboBoxItem x:Name="Section21Pg" Content="21. Учебная езда" Selected="Section21Page"/>
+                <ComboBoxItem x:Name="Section22Pg" Content="22. Перевозка людей" Selected="Section22Page"/>
+                <ComboBoxItem x:Name="Section23Pg" Content="23. Перевозка грузов" Selected="Section23Page"/>
+                <ComboBoxItem x:Name="Section24Pg" Content="24. Дополнительные требования к движению велописедистов и водителей мопедов" Selected="Section24Page"/>
+                <ComboBoxItem x:Name="Section25Pg" Content="25. Дополнительные требованияк движению гужевых повозое, а также к прогону животных" Selected="Section25Page"/>
+                <ComboBoxItem x:Name="Section26Pg" Content="26. Нормы времени управления транспортным средством и отдыха" Selected="Section26Page"/>
+            </ComboBox>
+
+
+           
+            <ScrollViewer x:Name="ScrollViewerBox" 
+                          Height="700"
+                          Visibility="Hidden"
+                         Margin="0,0,0,0"
+                          Background="White">
+                <StackPanel x:Name="SearchStack">
+
+                </StackPanel>
+            </ScrollViewer>
+            <Frame Height="700"  Name="frame"
+                   Margin="0,-700,0,0"></Frame>
+
+
+        </StackPanel>
+        <Button Grid.Column="2" 
+                    x:Name="backButton2" 
+                    Width="100" Height="40" 
+                    Content="Назад" 
+                    VerticalAlignment="Top"
+                Margin="0,25,0,0" Click="backButton2_OnClick"
+                  />
+
+    </Grid>
+</Page>

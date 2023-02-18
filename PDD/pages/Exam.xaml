@@ -1,0 +1,29 @@
+﻿<Page x:Class="PDD.pages.Exam"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:PDD.pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Exam">
+
+    <Grid Background="#FF212121">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="700"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.Column="1" VerticalAlignment="Center">
+            <TextBlock Foreground="White" FontSize="16" TextWrapping="Wrap"  TextAlignment="Center"
+                   Text="На экзамене Вам даётся 20 вопросов. На экзамен отводится 20 минут. Допускается 2 ошибки, если Вы допустите три ошибки, экзамен будет не сдан. Также с каждой ошибкой Вам будет добавлено 5 вопросов и 5 минут времени." />
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <Button x:Name="ExamStartButton" Width="100" Height="30" Content="Начать экзамен" Margin="0,20,5,0" Click="ExamStartButton_Click"/>
+                <Button x:Name="backButton" Width="100" Height="30" Content="Назад" Margin="5,20,0,0" Click="backButton_Click"/>
+
+            </StackPanel>
+        </StackPanel>
+        <Frame Grid.ColumnSpan="3" x:Name="frameExam"></Frame>
+
+    </Grid>
+</Page>

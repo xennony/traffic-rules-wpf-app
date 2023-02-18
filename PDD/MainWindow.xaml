@@ -1,0 +1,114 @@
+﻿<Window x:Name="Current" x:Class="PDD.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PDD"
+        mc:Ignorable="d"
+        Title="ПДД Тест" Height="850" Width="1300" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" Closing="Current_Closing" KeyDown="Current_KeyDown">
+    <Grid Background="#FF212121">
+        <!--<Image Source="/img/pattern (3).png" Height="1300"  Opacity="0.03"/>-->
+        <Label Content="ПДД ТЕСТ" Foreground="White" HorizontalAlignment="Center" FontSize="24" VerticalAlignment="Center" Margin="346.093,77.413,317.487,299.663" FontWeight="Bold" Width="128.42" HorizontalContentAlignment="Center"/>
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+            <StackPanel Orientation="Horizontal">
+                <!--Учить билеты-->
+                <Button x:Name="LearnButton" HorizontalAlignment="Left" Margin="20,20,0,0" VerticalAlignment="Top" Width="100" Height="100" Grid.ColumnSpan="2" Click="LearnButton_Click">
+                    <StackPanel Orientation="Vertical">
+                        <Image Source="./img/1.png" Width="50" Height="50"/>
+                        <TextBlock Text="Учить билеты" HorizontalAlignment="Center"/>
+                    </StackPanel>
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="10"/>
+                        </Style>
+                    </Button.Resources>
+                    <Button.Background>
+                        <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                            <GradientStop Color="#FFA1C4FD" Offset="0"/>
+                            <GradientStop Color="#FF3CCFF0" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Button.Background>
+                </Button>
+                <!--Сдать экзамен-->
+                <Button x:Name="ExamButton" HorizontalAlignment="Left" Margin="20,20,0,0" VerticalAlignment="Top" Width="100" Height="100" Grid.ColumnSpan="2" Click="ExamButton_Click">
+                    <StackPanel Orientation="Vertical">
+                        <Image Source="/img/2.png" Width="50" Height="50"/>
+                        <TextBlock Text="Сдать экзамен" HorizontalAlignment="Center"/>
+                    </StackPanel>
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="10"/>
+                        </Style>
+                    </Button.Resources>
+                    <Button.Background>
+                        <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                            <GradientStop Color="#FFFDA1A1" Offset="0"/>
+                            <GradientStop Color="#FFF0B73C" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Button.Background>
+                </Button>
+                <!--Теория-->
+                <Button x:Name="TheoryButton" HorizontalAlignment="Left" Margin="20,20,0,0" VerticalAlignment="Top" Width="100" Height="100" Grid.ColumnSpan="2" Click="TheoryButton_Click">
+                    <StackPanel Orientation="Vertical">
+                        <Image Source="/img/3.png" Width="50" Height="50"/>
+                        <TextBlock Text="Теория" HorizontalAlignment="Center"/>
+                    </StackPanel>
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="10"/>
+                        </Style>
+                    </Button.Resources>
+                    <Button.Background>
+                        <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                            <GradientStop Color="#FFA1FDFD" Offset="0"/>
+                            <GradientStop Color="#FF3CF0AF" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Button.Background>
+                </Button>
+
+                <Button x:Name="MistakeButton" HorizontalAlignment="Left" Margin="20,20,0,0" VerticalAlignment="Top" Width="100" Height="100" Grid.ColumnSpan="2" Click="MistakeButton_Click">
+                    <StackPanel Orientation="Vertical">
+                        <Image Source="/img/4.png" Width="50" Height="50"/>
+                        <TextBlock Text="Ошибки" HorizontalAlignment="Center"/>
+
+                    </StackPanel>
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="10"/>
+                        </Style>
+                    </Button.Resources>
+                    <Button.Background>
+                        <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                            <GradientStop Color="#FFFDA1A1" Offset="0"/>
+                            <GradientStop Color="#FFF03C3C" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Button.Background>
+                </Button>
+                <Button x:Name="StatisticButton" HorizontalAlignment="Left" Margin="20,20,0,0" VerticalAlignment="Top" Width="100" Height="100" Grid.ColumnSpan="2" Click="StatisticButton_Click">
+                    <StackPanel Orientation="Vertical">
+                        <Image Source="/img/5.png" Width="50" Height="50"/>
+                        <TextBlock Text="Статистика" HorizontalAlignment="Center"/>
+                    </StackPanel>
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="10"/>
+                        </Style>
+                    </Button.Resources>
+                    <Button.Background>
+                        <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                            <GradientStop Color="#FFFDA1E4" Offset="0"/>
+                            <GradientStop Color="#FFA63CF0" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Button.Background>
+                </Button>
+
+            </StackPanel>
+        </StackPanel>
+        <Button x:Name="HelpBtn" Content="Справка" Visibility="Hidden"
+                Width="100" Height="30" Click="HelpBtn_Click"
+                Margin="20,400,0,0" Background="Transparent" Foreground="White" BorderBrush="#7F707070" HorizontalAlignment="Center"/>
+
+        <Frame x:Name="frame" ContentRendered="myFrame_ContentRendered"></Frame> 
+
+    </Grid>
+</Window>
