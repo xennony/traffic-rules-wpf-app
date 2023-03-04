@@ -27,16 +27,16 @@ namespace PDD.pages
         public Statistics()
         {
             InitializeComponent();
-            for (int i = 0; i < MainWindow.StatisticGlobalArray.Length; i++)
+            for (int i = 0; i < MainWindow.statisticGlobalArray.Length; i++)
             {
                 Console.Write(i + " "); 
-                Console.WriteLine(MainWindow.StatisticGlobalArray[i]);
+                Console.WriteLine(MainWindow.statisticGlobalArray[i]);
             }
 
             Label2.Content = "Решенно билетов: ";
             ProgressBar1.Maximum = 40;
-            label6.Content = MainWindow.StatisticGlobalArray.Sum();
-            ProgressBar1.Value = MainWindow.StatisticGlobalArray.Sum();
+            label6.Content = MainWindow.statisticGlobalArray.Sum();
+            ProgressBar1.Value = MainWindow.statisticGlobalArray.Sum();
 
             if (MainWindow.wrongAnswers + MainWindow.correctAnswers == 0)
             {

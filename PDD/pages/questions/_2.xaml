@@ -20,7 +20,7 @@
 
         <Image Height="300" Width="600" Grid.Column="1" 
                x:Name="pictureBox"    
-               Source="/images/1/1.jpg" 
+               Source="/img/Template.jpg" 
                Margin="52,-50,48,229"/>
         <Border Grid.Column="1" Height="100" Margin="0,250,0,190">
             <TextBlock 

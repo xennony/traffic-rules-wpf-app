@@ -116,7 +116,7 @@ namespace PDD.pages.questions
                 if (score == 20)
                 {
                     resWin.WordButton.Text = "Отлично, вы решили все вопросы!";
-                    MainWindow.StatisticGlobalArray[1] = 1;
+                    MainWindow.statisticGlobalArray[1] = 1;
 
                 }
                 else if (score <= 10)
@@ -164,7 +164,7 @@ namespace PDD.pages.questions
                     ans3.Text = "3. Пять.";
                     bt1.Tag = "1";
 
-                    pictureBox.Source = new BitmapImage(new Uri("pack://application:,,,/images/2/1.jpg"));
+                    pictureBox.Source = new BitmapImage(new Uri("pack://application:,,,/img/Template.jpg"));
 
 
                     break;
@@ -178,7 +178,7 @@ namespace PDD.pages.questions
                     ans2.Text = "2. Можно, если Вы не затрудните движение встречному автомобилю.";
                     ans3.Text = "3. Нельзя.";
 
-                    pictureBox.Source = new BitmapImage(new Uri("pack://application:,,,/images/2/2.jpg"));
+                    pictureBox.Source = new BitmapImage(new Uri("pack://application:,,,/img/Template.jpg"));
 
                     break;
 
@@ -192,7 +192,7 @@ namespace PDD.pages.questions
                     ans3.Text = "3. Разрешено только по нечетным числам месяца.";
                     ans4.Text = "4. Запрещено.";
 
-                    pictureBox.Source = new BitmapImage(new Uri("pack://application:,,,/images/2/3.jpg"));
+                    pictureBox.Source = new BitmapImage(new Uri("pack://application:,,,/img/Template.jpg"));
 
                     break;
 
@@ -205,7 +205,7 @@ namespace PDD.pages.questions
                     ans3.Text = "3. Движение механических транспортных средств.";
                     bt3.Tag = "1";
 
-                    pictureBox.Source = new BitmapImage(new Uri("pack://application:,,,/images/2/4.jpg"));
+                    pictureBox.Source = new BitmapImage(new Uri("pack://application:,,,/img/Template.jpg"));
 
                     break;
 
@@ -218,7 +218,7 @@ namespace PDD.pages.questions
                     ans3.Text = "3. Запрещен.";
                     bt3.Tag = "1";
 
-                    pictureBox.Source = new BitmapImage(new Uri("pack://application:,,,/images/2/5.jpg"));
+                    pictureBox.Source = new BitmapImage(new Uri("pack://application:,,,/img/Template.jpg"));
 
                     break;
 
@@ -231,7 +231,7 @@ namespace PDD.pages.questions
                     ans2.Text = "2. Прямо и налево.";
                     ans3.Text = "3. Налево и в обратном направлении.";
 
-                    pictureBox.Source = new BitmapImage(new Uri("pack://application:,,,/images/2/6.jpg"));
+                    pictureBox.Source = new BitmapImage(new Uri("pack://application:,,,/img/Template.jpg"));
 
                     break;
 
@@ -244,7 +244,7 @@ namespace PDD.pages.questions
                     ans3.Text = "3. Снизить скорость, чтобы остановиться и уступить дорогу мотоциклу.";
                     bt3.Tag = "1";
 
-                    pictureBox.Source = new BitmapImage(new Uri("pack://application:,,,/images/2/7.jpg"));
+                    pictureBox.Source = new BitmapImage(new Uri("pack://application:,,,/img/Template.jpg"));
 
                     break;
 
@@ -256,7 +256,7 @@ namespace PDD.pages.questions
                     ans2.Text = "2. На правом.";
                     ans3.Text = "3. На обоих.";
                     bt3.Tag = "1";
-                    pictureBox.Source = new BitmapImage(new Uri("pack://application:,,,/images/2/8.jpg"));
+                    pictureBox.Source = new BitmapImage(new Uri("pack://application:,,,/img/Template.jpg"));
 
                     break;
 
@@ -269,7 +269,7 @@ namespace PDD.pages.questions
                     ans2.Text = "2. Можно только при отсутствии приближающегося поезда.";
                     ans3.Text = "3. Нельзя.";
 
-                    pictureBox.Source = new BitmapImage(new Uri("pack://application:,,,/images/2/9.jpg"));
+                    pictureBox.Source = new BitmapImage(new Uri("pack://application:,,,/img/Template.jpg"));
 
                     break;
 
@@ -296,7 +296,7 @@ namespace PDD.pages.questions
                     ans3.Text = "3. Запрещено.";
                     bt3.Tag = "1";
 
-                    pictureBox.Source = new BitmapImage(new Uri("pack://application:,,,/images/2/11.jpg"));
+                    pictureBox.Source = new BitmapImage(new Uri("pack://application:,,,/img/Template.jpg"));
 
                     break;
 
@@ -309,7 +309,7 @@ namespace PDD.pages.questions
                     bt2.Tag = "1";
                     ans3.Text = "3. Запрещается.";
 
-                    pictureBox.Source = new BitmapImage(new Uri("pack://application:,,,/images/2/12.jpg"));
+                    pictureBox.Source = new BitmapImage(new Uri("pack://application:,,,/img/Template.jpg"));
 
                     break;
 
@@ -322,7 +322,7 @@ namespace PDD.pages.questions
                     ans3.Text = "3. Автобусу и пешеходам.";
                     bt3.Tag = "1";
 
-                    pictureBox.Source = new BitmapImage(new Uri("pack://application:,,,/images/2/13.jpg"));
+                    pictureBox.Source = new BitmapImage(new Uri("pack://application:,,,/img/Template.jpg"));
 
                     break;
 
@@ -335,7 +335,7 @@ namespace PDD.pages.questions
                     ans3.Text = "3. В обоих перечисленных случаях.";
                     bt3.Tag = "1";
 
-                    pictureBox.Source = new BitmapImage(new Uri("pack://application:,,,/images/2/14.jpg"));
+                    pictureBox.Source = new BitmapImage(new Uri("pack://application:,,,/img/Template.jpg"));
 
                     break;
 
@@ -347,7 +347,7 @@ namespace PDD.pages.questions
                     bt1.Tag = "1";
                     ans2.Text = "2. Не обязан.";
 
-                    pictureBox.Source = new BitmapImage(new Uri("pack://application:,,,/images/2/15.jpg"));
+                    pictureBox.Source = new BitmapImage(new Uri("pack://application:,,,/img/Template.jpg"));
 
                     break;
 
@@ -360,7 +360,7 @@ namespace PDD.pages.questions
                     ans3.Text = "3. Запрещается.";
                     bt3.Tag = "1";
 
-                    pictureBox.Source = new BitmapImage(new Uri("pack://application:,,,/images/2/16.jpg"));
+                    pictureBox.Source = new BitmapImage(new Uri("pack://application:,,,/img/Template.jpg"));
 
                     break;
 
@@ -420,7 +420,7 @@ namespace PDD.pages.questions
 
             }
             {
-            if (MainWindow.GOD_MOD)
+            if (MainWindow.godMode)
             {
                 if (bt1.Tag.ToString() == "1")
                 {

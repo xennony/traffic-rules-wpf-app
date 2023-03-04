@@ -114,7 +114,7 @@ namespace PDD.pages.questions
                 if (score == 20)
                 {
                     resWin.WordButton.Text = "Отлично, вы решили все вопросы!";
-                    MainWindow.StatisticGlobalArray[28] = 1;
+                    MainWindow.statisticGlobalArray[28] = 1;
                 }
                 else if (score <= 10)
                 {
@@ -160,7 +160,7 @@ namespace PDD.pages.questions
                     ans2.Text = "2. Вы должны обязательно остановиться, чтобы пропустить других участников движения.";
                     ans3.Text = "3. Вы не должны начинать, возобновлять или продолжать движение, осуществлять какой-либо маневр, если это может вынудить других участников движения, имеющих по отношению к Вам преимущество, изменить направление движения или скорость.";
                     bt3.Tag = "1";
-                    pictureBox.Source = new BitmapImage(new Uri("pack://application:,,,/images/29/1.jpg"));
+                    pictureBox.Source = new BitmapImage(new Uri("pack://application:,,,/img/Template.jpg"));
 
                     bt1.Visibility = Visibility.Visible; bt2.Visibility = Visibility.Visible;
                     bt3.Visibility = Visibility.Visible; bt4.Visibility = Visibility.Hidden;
@@ -174,7 +174,7 @@ namespace PDD.pages.questions
                     ans2.Text = "2. А и В.";
                     bt2.Tag = "1";
                     ans3.Text = "3. Все.";
-                    pictureBox.Source = new BitmapImage(new Uri("pack://application:,,,/images/29/2.jpg"));
+                    pictureBox.Source = new BitmapImage(new Uri("pack://application:,,,/img/Template.jpg"));
 
                     bt1.Visibility = Visibility.Visible; bt2.Visibility = Visibility.Visible;
                     bt3.Visibility = Visibility.Visible; bt4.Visibility = Visibility.Hidden;
@@ -188,7 +188,7 @@ namespace PDD.pages.questions
                     bt1.Tag = "1";
                     ans2.Text = "2. Разрешено, если скорость мотоцикла не более 30 км/ч.";
                     ans3.Text = "3. Запрещено.";
-                    pictureBox.Source = new BitmapImage(new Uri("pack://application:,,,/images/29/3.jpg"));
+                    pictureBox.Source = new BitmapImage(new Uri("pack://application:,,,/img/Template.jpg"));
 
                     bt1.Visibility = Visibility.Visible; bt2.Visibility = Visibility.Visible;
                     bt3.Visibility = Visibility.Visible; bt4.Visibility = Visibility.Hidden;
@@ -202,7 +202,7 @@ namespace PDD.pages.questions
                     ans2.Text = "2. Можно, если разрешенная максимальная масса автомобиля не более 3,5 т.";
                     ans3.Text = "3. Нельзя.";
                     bt3.Tag = "1";
-                    pictureBox.Source = new BitmapImage(new Uri("pack://application:,,,/images/29/4.jpg"));
+                    pictureBox.Source = new BitmapImage(new Uri("pack://application:,,,/img/Template.jpg"));
 
                     bt1.Visibility = Visibility.Visible; bt2.Visibility = Visibility.Visible;
                     bt3.Visibility = Visibility.Visible; bt4.Visibility = Visibility.Hidden;
@@ -216,7 +216,7 @@ namespace PDD.pages.questions
                     bt1.Tag = "1";
                     ans2.Text = "2. Только въезд в неосвещенные тоннели.";
                     ans3.Text = "3. Любые элементы дорожных сооружений, представляющие опасность.";
-                    pictureBox.Source = new BitmapImage(new Uri("pack://application:,,,/images/29/5.jpg"));
+                    pictureBox.Source = new BitmapImage(new Uri("pack://application:,,,/img/Template.jpg"));
 
                     bt1.Visibility = Visibility.Visible; bt2.Visibility = Visibility.Visible;
                     bt3.Visibility = Visibility.Visible; bt4.Visibility = Visibility.Hidden;
@@ -230,7 +230,7 @@ namespace PDD.pages.questions
                     ans2.Text = "2. Перед стоп-линией.";
                     bt2.Tag = "1";
                     ans3.Text = "3. В любом из перечисленных.";
-                    pictureBox.Source = new BitmapImage(new Uri("pack://application:,,,/images/29/6.jpg"));
+                    pictureBox.Source = new BitmapImage(new Uri("pack://application:,,,/img/Template.jpg"));
 
                     bt1.Visibility = Visibility.Visible; bt2.Visibility = Visibility.Visible;
                     bt3.Visibility = Visibility.Visible; bt4.Visibility = Visibility.Hidden;
@@ -244,7 +244,7 @@ namespace PDD.pages.questions
                     bt1.Tag = "1";
                     ans2.Text = "2. Должны только при наличии в непосредственной близости других транспортных средств.";
                     ans3.Text = "3. Не должны.";
-                    pictureBox.Source = new BitmapImage(new Uri("pack://application:,,,/images/29/7.jpg"));
+                    pictureBox.Source = new BitmapImage(new Uri("pack://application:,,,/img/Template.jpg"));
 
                     bt1.Visibility = Visibility.Visible; bt2.Visibility = Visibility.Visible;
                     bt3.Visibility = Visibility.Visible; bt4.Visibility = Visibility.Hidden;
@@ -260,7 +260,7 @@ namespace PDD.pages.questions
                     ans3.Text = "3. Только водитель автомобиля.";
                     ans4.Text = "4. Никто не нарушает.";
 
-                    pictureBox.Source = new BitmapImage(new Uri("pack://application:,,,/images/29/8.jpg"));
+                    pictureBox.Source = new BitmapImage(new Uri("pack://application:,,,/img/Template.jpg"));
 
                     bt1.Visibility = Visibility.Visible; bt2.Visibility = Visibility.Visible;
                     bt3.Visibility = Visibility.Visible; bt4.Visibility = Visibility.Visible;
@@ -274,7 +274,7 @@ namespace PDD.pages.questions
                     ans2.Text = "2. Разрешено только до пешеходного перехода.";
                     bt2.Tag = "1";
                     ans3.Text = "3. Запрещено.";
-                    pictureBox.Source = new BitmapImage(new Uri("pack://application:,,,/images/29/9.jpg"));
+                    pictureBox.Source = new BitmapImage(new Uri("pack://application:,,,/img/Template.jpg"));
 
                     bt1.Visibility = Visibility.Visible; bt2.Visibility = Visibility.Visible;
                     bt3.Visibility = Visibility.Visible; bt4.Visibility = Visibility.Hidden;
@@ -288,7 +288,7 @@ namespace PDD.pages.questions
                     ans2.Text = "2. Можно, если гужевая повозка двигается со скоростью не более 30 км/ч.";
                     ans3.Text = "3. Нельзя.";
                     bt3.Tag = "1";
-                    pictureBox.Source = new BitmapImage(new Uri("pack://application:,,,/images/29/10.jpg"));
+                    pictureBox.Source = new BitmapImage(new Uri("pack://application:,,,/img/Template.jpg"));
 
                     bt1.Visibility = Visibility.Visible; bt2.Visibility = Visibility.Visible;
                     bt3.Visibility = Visibility.Visible; bt4.Visibility = Visibility.Hidden;
@@ -302,7 +302,7 @@ namespace PDD.pages.questions
                     ans2.Text = "2. Разрешается, если при этом не будут созданы помехи другим участникам движения.";
                     ans3.Text = "3. Запрещается.";
                     bt3.Tag = "1";
-                    pictureBox.Source = new BitmapImage(new Uri("pack://application:,,,/images/29/11.jpg"));
+                    pictureBox.Source = new BitmapImage(new Uri("pack://application:,,,/img/Template.jpg"));
 
                     bt1.Visibility = Visibility.Visible; bt2.Visibility = Visibility.Visible;
                     bt3.Visibility = Visibility.Visible; bt4.Visibility = Visibility.Hidden;
@@ -318,7 +318,7 @@ namespace PDD.pages.questions
                     ans4.Text = "4. Никто не нарушил.";
 
                     bt4.Tag = "1";
-                    pictureBox.Source = new BitmapImage(new Uri("pack://application:,,,/images/29/12.jpg"));
+                    pictureBox.Source = new BitmapImage(new Uri("pack://application:,,,/img/Template.jpg"));
 
                     bt1.Visibility = Visibility.Visible; bt2.Visibility = Visibility.Visible;
                     bt3.Visibility = Visibility.Visible; bt4.Visibility = Visibility.Visible;
@@ -332,7 +332,7 @@ namespace PDD.pages.questions
                     ans2.Text = "2. Только при развороте.";
                     ans3.Text = "3. При выполнении любого маневра из перечисленных.";
                     bt3.Tag = "1";
-                    pictureBox.Source = new BitmapImage(new Uri("pack://application:,,,/images/29/13.jpg"));
+                    pictureBox.Source = new BitmapImage(new Uri("pack://application:,,,/img/Template.jpg"));
 
                     bt1.Visibility = Visibility.Visible; bt2.Visibility = Visibility.Visible;
                     bt3.Visibility = Visibility.Visible; bt4.Visibility = Visibility.Hidden;
@@ -345,7 +345,7 @@ namespace PDD.pages.questions
                     ans1.Text = "1. Уступите дорогу трамваю.";
                     bt1.Tag = "1";
                     ans2.Text = "2. Проедете перекресток первым.";
-                    pictureBox.Source = new BitmapImage(new Uri("pack://application:,,,/images/29/14.jpg"));
+                    pictureBox.Source = new BitmapImage(new Uri("pack://application:,,,/img/Template.jpg"));
 
                     bt1.Visibility = Visibility.Visible; bt2.Visibility = Visibility.Visible;
                     bt3.Visibility = Visibility.Hidden; bt4.Visibility = Visibility.Hidden;
@@ -359,7 +359,7 @@ namespace PDD.pages.questions
                     ans2.Text = "2. Только автобусу.";
                     ans3.Text = "3. Обоим транспортным средствам.";
                     bt3.Tag = "1";
-                    pictureBox.Source = new BitmapImage(new Uri("pack://application:,,,/images/29/15.jpg"));
+                    pictureBox.Source = new BitmapImage(new Uri("pack://application:,,,/img/Template.jpg"));
 
                     bt1.Visibility = Visibility.Visible; bt2.Visibility = Visibility.Visible;
                     bt3.Visibility = Visibility.Visible; bt4.Visibility = Visibility.Hidden;
@@ -373,7 +373,7 @@ namespace PDD.pages.questions
                     ans2.Text = "2. Можно, если разрешенная максимальная масса автомобиля не более 2,5 т.";
                     bt2.Tag = "1";
                     ans3.Text = "3. Нельзя.";
-                    pictureBox.Source = new BitmapImage(new Uri("pack://application:,,,/images/29/16.jpg"));
+                    pictureBox.Source = new BitmapImage(new Uri("pack://application:,,,/img/Template.jpg"));
 
                     bt1.Visibility = Visibility.Visible; bt2.Visibility = Visibility.Visible;
                     bt3.Visibility = Visibility.Visible; bt4.Visibility = Visibility.Hidden;
@@ -389,7 +389,7 @@ namespace PDD.pages.questions
                     ans4.Text = "4. Любые внешние световые приборы из перечисленных.";
 
                     bt4.Tag = "1";
-                    pictureBox.Source = new BitmapImage(new Uri("pack://application:,,,/images/29/17.jpg"));
+                    pictureBox.Source = new BitmapImage(new Uri("pack://application:,,,/img/Template.jpg"));
 
                     bt1.Visibility = Visibility.Visible; bt2.Visibility = Visibility.Visible;
                     bt3.Visibility = Visibility.Visible; bt4.Visibility = Visibility.Visible;
@@ -405,7 +405,7 @@ namespace PDD.pages.questions
                     bt3.Tag = "1";
                     ans4.Text = "4. 2,0 мм.";
 
-                    pictureBox.Source = new BitmapImage(new Uri("pack://application:,,,/images/29/18.jpg"));
+                    pictureBox.Source = new BitmapImage(new Uri("pack://application:,,,/img/Template.jpg"));
 
                     bt1.Visibility = Visibility.Visible; bt2.Visibility = Visibility.Visible;
                     bt3.Visibility = Visibility.Visible; bt4.Visibility = Visibility.Visible;
@@ -419,7 +419,7 @@ namespace PDD.pages.questions
                     ans2.Text = "2. Продолжить движение и просушить тормозные колодки многократными непродолжительными нажатиями на педаль тормоза.";
                     ans3.Text = "3. Продолжить движение с малой скоростью без притормаживания.";
                     bt2.Tag = "1";
-                    pictureBox.Source = new BitmapImage(new Uri("pack://application:,,,/images/29/19.jpg"));
+                    pictureBox.Source = new BitmapImage(new Uri("pack://application:,,,/img/Template.jpg"));
 
                     bt1.Visibility = Visibility.Visible; bt2.Visibility = Visibility.Visible;
                     bt3.Visibility = Visibility.Visible; bt4.Visibility = Visibility.Hidden;
@@ -433,7 +433,7 @@ namespace PDD.pages.questions
                     ans2.Text = "2. Надеть медицинские перчатки, рану промыть спиртовым раствором йода, смазать лечебной мазью и заклеить сплошным лейкопластырем.";
                     ans3.Text = "3. Надеть медицинские перчатки, рану не промывать, на рану наложить марлевую стерильную салфетку, закрепив ее лейкопластырем по краям или бинтовой повязкой.";
                     bt3.Tag = "1";
-                    pictureBox.Source = new BitmapImage(new Uri("pack://application:,,,/images/29/20.jpg"));
+                    pictureBox.Source = new BitmapImage(new Uri("pack://application:,,,/img/Template.jpg"));
 
                     bt1.Visibility = Visibility.Visible; bt2.Visibility = Visibility.Visible;
                     bt3.Visibility = Visibility.Visible; bt4.Visibility = Visibility.Hidden;
@@ -442,7 +442,7 @@ namespace PDD.pages.questions
 
             }
             {
-            if (MainWindow.GOD_MOD)
+            if (MainWindow.godMode)
             {
                 if (bt1.Tag.ToString() == "1")
                 {
